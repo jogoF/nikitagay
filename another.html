@@ -8,12 +8,20 @@
 </head>
 <body>
     <div class="background">
-        <video type="video/mp4" id="video" src="img/vid.mp4"></video>
+        <video id="video" src="img/vid.mp4" autoplay playsinline loop>
+            Your browser does not support the video tag.
+        </video>
     </div>
-    
+
     <script>
         var x = document.getElementById("video");
+        x.muted = true; // Initially muted for autoplay to work
         x.play();
+
+        // Unmute after a user interaction (e.g., click)
+        document.addEventListener('click', function() {
+            x.muted = false; // Unmute on user interaction
+        });
     </script>
 </body>
 </html>
