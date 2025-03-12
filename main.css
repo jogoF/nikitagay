@@ -31,10 +31,14 @@ body, html {
 }
 
 .fake-btn {
-    width: 10%;
-    height: 5%;
+    width: 200px;
+    height: 60px;
+    border-radius: 10%;
+    display: flex;
     z-index: 2;
     background-color: #ff5e00;
+    align-items: center;
+    justify-content: center;
 }
 
 
