@@ -33,7 +33,7 @@ body, html {
 .fake-btn {
     width: 30%;
     height: 10%;
-    border-radius: 10%;
+    border-radius: 25px;
     display: flex;
     z-index: 2;
     background-color: #ff5e00;
